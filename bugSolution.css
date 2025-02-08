@@ -1,0 +1,19 @@
+/* bugSolution.css */
+.my-class {
+  /* Base styles */
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.my-class::before {
+  content: "Hello!";
+}
+
+.another-class {
+  /* Using direct styling instead of @apply */
+  background-color: lightcoral;
+  padding: 10px;
+  &::before{
+    content: "World";
+  }
+}
